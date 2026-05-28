@@ -29,7 +29,7 @@
     "fastify": "^4.26.2",
     "keyv-lru-files": "github:holy-unblocker/keyv-lru-files",
     "mime": "^2.5.2",
-    "testcafe-hammerhead": "24.5.18",
+    "testcafe-hammerhead": "31.7.8",
     "uglify-js": "^3.15.3",
     "uuid": "^8.3.2",
     "ws": "^8.2.0"
