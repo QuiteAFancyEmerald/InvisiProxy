@@ -34,7 +34,7 @@ const wisp = new Mrrowisp({
 
   allowDirectIP: true,
   allowPrivateIPs: false,
-  allowLoopbackIPs: true,
+  allowLoopbackIPs: false,
 
   parseRealIP: true,
   trustedHeaders: ['CF-Connecting-IP', 'X-Forwarded-For'],
