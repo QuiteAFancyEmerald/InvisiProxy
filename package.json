@@ -49,7 +49,7 @@
   },
   "devDependencies": {
     "@babel/node": "^7.29.7",
-    "esbuild": "^0.27.7",
+    "esbuild": "^0.28.1",
     "playwright": "^1.61.1"
   }
 }
