@@ -1,8 +1,13 @@
 {
-  "name": "InvisiProxy LTS",
-  "image": "mcr.microsoft.com/devcontainers/javascript-node:0-20",
+  "name": "docker-enabled",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
   "features": {
-    "node": "20"
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "22"
+    },
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {
+      "moby": false
+    }
   },
   "postCreateCommand": "corepack enable && corepack prepare pnpm@latest --activate && pnpm install"
 }
