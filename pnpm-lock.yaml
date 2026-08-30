@@ -67,67 +67,6 @@ importers:
         specifier: ^1.62.1
         version: 1.62.1
 
-  C:/Users/EmeraldPC/Documents/Development/InvisiProxy-LTS:
-    dependencies:
-      '@fastify/helmet':
-        specifier: ^13.1.1
-        version: 13.1.1
-      '@fastify/static':
-        specifier: ^9.3.0
-        version: 9.3.0
-      '@mercuryworkshop/bare-mux':
-        specifier: ^2.1.9
-        version: 2.1.9
-      '@mercuryworkshop/epoxy-transport':
-        specifier: ^3.0.1
-        version: 3.0.1
-      '@mercuryworkshop/libcurl-transport':
-        specifier: ^2.0.5
-        version: 2.0.5
-      '@mercuryworkshop/proxy-transports':
-        specifier: ^1.0.2
-        version: 1.0.2
-      '@mercuryworkshop/scramjet':
-        specifier: 2.0.67-alpha.2
-        version: 2.0.67-alpha.2
-      '@mercuryworkshop/scramjet-controller':
-        specifier: 0.0.14
-        version: 0.0.14(@mercuryworkshop/scramjet@2.0.67-alpha.2)
-      '@mercuryworkshop/scramjet-utils':
-        specifier: ^0.0.3
-        version: 0.0.3(@mercuryworkshop/scramjet-controller@0.0.14(@mercuryworkshop/scramjet@2.0.67-alpha.2))(@mercuryworkshop/scramjet@2.0.67-alpha.2)
-      '@titaniumnetwork-dev/ultraviolet':
-        specifier: https://github.com/titaniumnetwork-dev/Ultraviolet/releases/download/v3.2.10-headers/titaniumnetwork-dev-ultraviolet-3.2.10-headers.tgz
-        version: https://github.com/titaniumnetwork-dev/Ultraviolet/releases/download/v3.2.10-headers/titaniumnetwork-dev-ultraviolet-3.2.10-headers.tgz
-      axios:
-        specifier: ^1.20.0
-        version: 1.20.0
-      fastify:
-        specifier: ^5.12.1
-        version: 5.12.1
-      mrrowisp:
-        specifier: ^3.1.6
-        version: 3.1.6(typescript@6.0.3)
-      pm2:
-        specifier: ^7.0.4
-        version: 7.0.4(utf-8-validate@6.0.6)
-      utf-8-validate:
-        specifier: ^6.0.6
-        version: 6.0.6
-      ws:
-        specifier: ^8.21.3
-        version: 8.21.3(utf-8-validate@6.0.6)
-    devDependencies:
-      '@babel/node':
-        specifier: ^7.29.7
-        version: 7.29.7(@babel/core@7.29.7)
-      esbuild:
-        specifier: ^0.27.7
-        version: 0.27.7
-      playwright:
-        specifier: ^1.62.1
-        version: 1.62.1
-
 packages:
 
   '@babel/code-frame@7.29.7':
