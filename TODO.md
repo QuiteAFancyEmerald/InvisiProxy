@@ -8,14 +8,13 @@ This will be our nonexhaustive todo list for InvisiProxy LTS v6.x.x and above. R
 - [ ] Font obfuscation middleware
 - [ ] Implement multi-lang support!
 - [ ] Include default NGINX configuration for Docker Compose (will become the recommended method of hosting)
+- [ ] SolidJS rewrite
 
 #### Known Regressions
 - Bing will leak out of the respective stealth frame
 - Clean epoxy errors if unreleated to ProxyTransports
 
 ## Proxy/Site Functionality
-- [ ] Add EmulatorJS as alternative to webretro (more updated)
-- [ ] Updated ruffle.rs dependency 
 - [ ] Improve mobile support (epoxy should be the default; fix UI bugs)
 - [ ] Implement sandboxing techniques to prevent new tab leaks
 - [ ] Improve onboarding expierence 

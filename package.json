@@ -1,6 +1,6 @@
 {
   "name": "invisiproxy",
-  "version": "7.0.1",
+  "version": "7.0.2",
   "repository": "https://github.com/QuiteAFancyEmerald/InvisiProxy",
   "description": "InvisiProxy LTS is a web proxy service that helps you access websites that may be blocked by your network, government or policy all within your browser with no download or setup.",
   "main": "backend.js",
@@ -30,8 +30,8 @@
   "author": "TitaniumNetwork",
   "license": "AGPL-3.0-only",
   "dependencies": {
-    "@fastify/helmet": "^13.0.2",
-    "@fastify/static": "^9.1.3",
+    "@fastify/helmet": "^13.1.1",
+    "@fastify/static": "^9.3.0",
     "@mercuryworkshop/bare-mux": "^2.1.9",
     "@mercuryworkshop/epoxy-transport": "^3.0.1",
     "@mercuryworkshop/libcurl-transport": "^2.0.5",
@@ -40,16 +40,16 @@
     "@mercuryworkshop/scramjet-controller": "0.0.14",
     "@mercuryworkshop/scramjet-utils": "^0.0.3",
     "@titaniumnetwork-dev/ultraviolet": "https://github.com/titaniumnetwork-dev/Ultraviolet/releases/download/v3.2.10-headers/titaniumnetwork-dev-ultraviolet-3.2.10-headers.tgz",
-    "axios": "^1.18.1",
-    "fastify": "^5.9.0",
+    "axios": "^1.20.0",
+    "fastify": "^5.12.1",
     "mrrowisp": "^3.1.6",
-    "pm2": "^7.0.3",
+    "pm2": "^7.0.4",
     "utf-8-validate": "^6.0.6",
-    "ws": "^8.21.0"
+    "ws": "^8.21.3"
   },
   "devDependencies": {
     "@babel/node": "^7.29.7",
     "esbuild": "^0.27.7",
-    "playwright": "^1.61.1"
+    "playwright": "^1.62.1"
   }
 }

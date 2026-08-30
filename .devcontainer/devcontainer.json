@@ -1,8 +1,8 @@
 {
   "name": "InvisiProxy LTS",
-  "image": "mcr.microsoft.com/devcontainers/javascript-node:0-20",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:26",
   "features": {
-    "node": "20"
+    "node": "26"
   },
   "postCreateCommand": "corepack enable && corepack prepare pnpm@latest --activate && pnpm install"
 }

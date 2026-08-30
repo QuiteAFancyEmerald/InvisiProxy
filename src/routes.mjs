@@ -58,12 +58,7 @@ let pages = {
   browsing: 'pages/surf.html',
   credits: 'pages/nav/credits.html',
   privacy: 'pages/nav/privacy.html',
-  /* Games */
-  games: 'pages/nav/directory.html',
-  'web-games': 'pages/nav/games.html',
   partners: 'pages/nav/partners.html',
-  emulators: 'pages/nav/emulators.html',
-  'flash-games': 'pages/nav/flash.html',
   /* Proxies */
   ultraviolet: 'pages/proxnav/ultraviolet.html',
   scramjet: 'pages/proxnav/scramjet.html',
@@ -73,9 +68,6 @@ let pages = {
   youtube: 'pages/proxnav/preset/youtube.html',
   apps: 'pages/proxnav/preset/applications.html',
   /* Misc */
-  flash: 'archive/gfiles/flash/index.html',
-  webretro: 'archive/gfiles/rarch/index.html',
-  'vibe-os': 'archive/vibeOS/index.html',
   'robots.txt': 'robots.txt',
   'sitemap.xml': 'sitemap.xml',
   'browserconfig.xml': 'browserconfig.xml',
@@ -104,16 +96,12 @@ let externalPages = {
   'kofi': 'https://ko-fi.com/quiteafancyemerald',
   'titaniumnetwork-discord': 'https://discord.gg/CwWpdGkuWY',
   'truffled': 'https://truffled.lol',
-  'freedomproject': 'https://0xdc.icu',
+  'freedomproject': 'https://nullatenus.com',
   'mrrowisp': 'https://github.com/soap-phia/mrrowisp',
 };
 
 // Override the route names below when usingSEO is disabled in config.json.
 let altPaths = {
-  games: 'books',
-  'web-games': 'dictionary',
-  emulators: 'catalogue',
-  'flash-games': 'textbook',
   ultraviolet: 'networking',
   scramjet: 'working',
   uverror: 'network-error',
@@ -121,9 +109,6 @@ let altPaths = {
   youtube: 'wiki',
   partners: 'interface',
   apps: 'software',
-  flash: 'whiteboard',
-  webretro: 'notebook',
-  'vibe-os': 'pencil',
   github: {
     'bare-module': 'module',
     'bare-mux': 'bm',
@@ -166,7 +151,6 @@ let altPaths = {
   },
   /* Prefixes */
   prefixes: {
-    roms: 'ms',
     uv: 'network',
     scram: 'worker',
     epoxy: 'epoch',

@@ -143,7 +143,7 @@ commands: for (let i = 2; i < process.argv.length; i++)
        * rewrites are not intended to be used by any of those files.
        * Assets are compiled separately, before the rest of the files.
        */
-      const ignoredDirectories = ['dist', 'dist-new', 'assets', 'uv', 'scram', 'archive'];
+      const ignoredDirectories = ['dist', 'dist-new', 'assets', 'uv', 'scram'];
       const ignoredFileTypes = /\.map$/;
 
       const compile = (
@@ -240,11 +240,6 @@ commands: for (let i = 2; i < process.argv.length; i++)
 
       compile('./views');
 
-      // Compile the archive directory separately.
-      mkdirSync('./views/dist-new/archive');
-      if (existsSync('./views/archive'))
-        compile('./views/archive', '', 'archive/');
-
       const createFile = (location, text) => {
         writeFileSync(
           fileURLToPath(new URL('./views/dist-new/' + location, import.meta.url)),
@@ -281,7 +276,6 @@ commands: for (let i = 2; i < process.argv.length; i++)
         };
         await compress('./views/dist-new');
         await compress('./views/dist-new/pages', true);
-        await compress('./views/dist-new/archive', true);
       }
 
       rmSync(distFinal, { force: true, recursive: true });

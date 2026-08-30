@@ -146,7 +146,6 @@ app.register(fastifyStatic, {
 // Minified scripts are also served here, if minification is enabled.
 [
   'assets',
-  'archive',
   'uv',
   'scram',
   'epoxy',
@@ -158,33 +157,6 @@ app.register(fastifyStatic, {
     prefix: getAltPrefix(prefix, serverUrl.pathname),
     decorateReply: false,
   });
-});
-
-app.register(fastifyStatic, {
-  root: fileURLToPath(
-    new URL('../views/dist/archive/gfiles/rarch', import.meta.url)
-  ),
-  prefix: getAltPrefix('serving', serverUrl.pathname),
-  decorateReply: false,
-});
-
-// You should NEVER commit roms, due to piracy concerns.
-['cores', 'info', 'roms'].forEach((prefix) => {
-  app.register(fastifyStatic, {
-    root: fileURLToPath(
-      new URL('../views/dist/archive/gfiles/rarch/' + prefix, import.meta.url)
-    ),
-    prefix: getAltPrefix(prefix, serverUrl.pathname),
-    decorateReply: false,
-  });
-});
-
-app.register(fastifyStatic, {
-  root: fileURLToPath(
-    new URL('../views/dist/archive/gfiles/rarch/cores', import.meta.url)
-  ),
-  prefix: getAltPrefix('uauth', serverUrl.pathname),
-  decorateReply: false,
 });
 
 ['sw.js', 'sw-blacklist.js'].forEach((swFile) => {
