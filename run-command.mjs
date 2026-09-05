@@ -187,6 +187,9 @@ commands: for (let i = 2; i < process.argv.length; i++)
           else if (fileStats.isDirectory()) {
             if (!existsSync(targetPath)) mkdirSync(targetPath);
             compile(file, base + dir + '/', outDir, initialDir, applyRewrites);
+            if (config.verbose){
+              console.log(`[Build] Compiling directory "${file}" from ${base + dir + '/'} to ${targetPath}`);
+            }
           }
         });
 
@@ -216,6 +219,9 @@ commands: for (let i = 2; i < process.argv.length; i++)
 
         const prefix = prefixName + '/',
           prefixUrl = new URL('./views/dist-new/' + prefix, import.meta.url);
+          if (config.verbose){
+            console.log(`[Build] Compiling "${prefixName}" from ${relSrc} to ${prefixUrl}`);
+          }
         if (!existsSync(prefixUrl)) mkdirSync(prefixUrl);
 
         compile(relSrc, '', prefix);
