@@ -97,7 +97,7 @@ let externalPages = {
   'titaniumnetwork-discord': 'https://discord.gg/CwWpdGkuWY',
   'truffled': 'https://truffled.lol',
   'freedomproject': 'https://nullatenus.com',
-  'mrrowisp': 'https://github.com/soap-phia/mrrowisp',
+  'wispurr': 'https://github.com/sylvieisnton/wispurr',
 };
 
 // Override the route names below when usingSEO is disabled in config.json.
@@ -125,7 +125,7 @@ let altPaths = {
   'titaniumnetwork-discord': 'social',
   'truffled': 'educational',
   'freedomproject': 'frpu',
-  'mrrowisp': 'mrw',
+  'wispurr': 'wsp',
   /* Raw File Names */
   files: {
     'sw.js': 'service.js',

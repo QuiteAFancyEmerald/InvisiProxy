@@ -1,6 +1,6 @@
 {
   "name": "invisiproxy",
-  "version": "7.0.2",
+  "version": "7.0.2.1",
   "repository": "https://github.com/QuiteAFancyEmerald/InvisiProxy",
   "description": "InvisiProxy LTS is a web proxy service that helps you access websites that may be blocked by your network, government or policy all within your browser with no download or setup.",
   "main": "backend.js",
@@ -13,7 +13,8 @@
     "test": "pnpm run proxy-validator",
     "manual-start": "node run-command.mjs start",
     "kill": "node run-command.mjs stop kill",
-    "fetch-adblock": "curl -o views/assets/txt/blacklist.txt https://raw.githubusercontent.com/hagezi/dns-blocklists/main/domains/pro.txt",
+    "fetch-adblock": "curl -o views/assets/txt/blacklist.txt https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/pro.txt",
+    "fetch-adblock-ultimate": "curl -o views/assets/txt/blacklist.txt https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/ultimate.txt",
     "build": "node run-command.mjs build",
     "clear": "node run-command.mjs clean",
     "clean": "node run-command.mjs clean format",
@@ -41,15 +42,15 @@
     "@mercuryworkshop/scramjet-utils": "^0.0.3",
     "@titaniumnetwork-dev/ultraviolet": "https://github.com/titaniumnetwork-dev/Ultraviolet/releases/download/v3.2.10-headers/titaniumnetwork-dev-ultraviolet-3.2.10-headers.tgz",
     "axios": "^1.20.0",
-    "fastify": "^5.12.1",
-    "mrrowisp": "^3.1.6",
+    "fastify": "^5.12.5",
     "pm2": "^7.0.4",
     "utf-8-validate": "^6.0.6",
+    "wispurr": "^4.2.0",
     "ws": "^8.21.3"
   },
   "devDependencies": {
     "@babel/node": "^7.29.7",
     "esbuild": "^0.27.7",
-    "playwright": "^1.62.1"
+    "playwright": "^1.63.0"
   }
 }

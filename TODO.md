@@ -7,8 +7,8 @@ This will be our nonexhaustive todo list for InvisiProxy LTS v6.x.x and above. R
 - [ ] Class managling and DOM masquerading functionality to Scramjet (or stealth window) 
 - [ ] Font obfuscation middleware
 - [ ] Implement multi-lang support!
-- [ ] Include default NGINX configuration for Docker Compose (will become the recommended method of hosting)
 - [ ] SolidJS rewrite
+- [ ] Update Scramjet to V3
 
 #### Known Regressions
 - Bing will leak out of the respective stealth frame
@@ -22,6 +22,7 @@ This will be our nonexhaustive todo list for InvisiProxy LTS v6.x.x and above. R
 - [ ] Add Chii + ensuring users can access devtools while browsing; or utilize Scramjet playground instead - partial
 - [ ] Allow for custom SOCK5 proxy layering (HTTP and SOCKS4 scheme as well)
 - [ ] Add selector for default proxy; behavior is upon clicking on logo in omnibox it will direct back to the selected proxy in Settings
+- [x] Swap to wispurr over mrrowisp for security and performance - done
 - [x] Update to Scramjet v2.0.67-alpha.2 fixing several regressions - done
 - [x] Omnibox should state what the current site the user is on like a proper URL bar 
 - [x] Improve adblocking functions on site using Workerware + a pre-bundled uBlock Origin

@@ -1,5 +1,5 @@
 {
-  "name": "InvisiProxy v7.0.0",
+  "name": "InvisiProxy v7.0.2.1",
   "description": "InvisiProxy is a secure web proxy service supporting numerous sites while concentrating on detail with design, mechanics, and features. Bypass web filters regardless of whether it is an extension or network-based.",
   "repository": "https://github.com/QuiteAFancyEmerald/InvisiProxyr",
   "logo": "https://raw.githubusercontent.com/QuiteAFancyEmerald/InvisiProxy/master/views/assets/img/icon.png",
@@ -7,12 +7,13 @@
     "invisiproxy",
     "holyunblocker",
     "scramjet",
+    "wispurr",
+    "wisp",
     "ultraviolet",
     "titaniumnetwork",
     "node",
     "proxy",
     "unblocker",
-    "webproxy",
-    "games"
+    "webproxy"
   ]
 }

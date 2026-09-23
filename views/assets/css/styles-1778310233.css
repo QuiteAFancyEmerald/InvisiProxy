@@ -699,9 +699,9 @@ details[open] summary {
   padding: 25px;
   z-index: 6;
   width: 800px;
-  max-height: 90vh;
+  max-height: 90dvh;
   overflow-y: auto;
-  margin: 5vh auto;
+  margin: 5dvh auto;
   color: var(--settings-color, var(--nord6));
   font-weight: 500;
   font-family: 'Figtree', sans-serif;
@@ -1085,7 +1085,7 @@ input[type='text'] {
 /* ----------------------------------------------- */
 
 .box-home {
-  margin: 35vh 0;
+  margin: 35dvh 0;
   animation: fadeInAnimation ease-in-out 0.3s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
@@ -1385,7 +1385,7 @@ input[type='text'] {
   top: 0;
   left: 0;
   width: 100vw;
-  height: 100vh;
+  height: 100dvh;
   background-color: #0d1117;
   background-image: radial-gradient(
       circle,
@@ -1962,7 +1962,7 @@ input[type='text'] {
 }
 
 .box-error {
-  margin: 40vh 0;
+  margin: 40dvh 0;
   font-family: 'Lato', sans-serif;
 }
 
@@ -2146,7 +2146,7 @@ input[type='text'] {
   display: block;
   border: none;
   width: 100vw;
-  height: 100vh;
+  height: 100dvh;
   left: 0;
   top: 0;
   background-color: #ffffff;
@@ -2159,7 +2159,7 @@ input[type='text'] {
   top: 0;
   left: 0;
   width: 100vw;
-  height: 100vh;
+  height: 100dvh;
   background-color: #111;
 }
 
@@ -2253,7 +2253,7 @@ input[type='text'] {
   font-family: 'Lato', sans-serif;
   background-color: var(--nord0);
   width: 700px;
-  height: calc(100vh - 92px);
+  height: calc(100dvh - 92px);
   overflow-y: auto;
   overflow-x: hidden;
   margin: 0 auto;
