@@ -136,14 +136,20 @@ commands: for (let i = 2; i < process.argv.length; i++)
       const distFinal = fileURLToPath(new URL('./views/dist', import.meta.url));
       const dist = fileURLToPath(new URL('./views/dist-new', import.meta.url));
       rmSync(dist, { force: true, recursive: true });
-      rmSync(distFinal, { force: true, recursive: true });
       mkdirSync(dist);
 
       /* The archive directory is excluded from this process, since source
        * rewrites are not intended to be used by any of those files.
        * Assets are compiled separately, before the rest of the files.
        */
-      const ignoredDirectories = ['dist', 'dist-new', 'assets', 'uv', 'scram'];
+      const ignoredDirectories = [
+        'dist',
+        'dist-new',
+        'dist-old',
+        'assets',
+        'uv',
+        'scram',
+      ];
       const ignoredFileTypes = /\.map$/;
 
       const compile = (
@@ -292,8 +298,11 @@ commands: for (let i = 2; i < process.argv.length; i++)
         await compress('./views/dist-new/pages', true);
       }
 
-      rmSync(distFinal, { force: true, recursive: true });
+      const distOld = distFinal + '-old';
+      rmSync(distOld, { force: true, recursive: true });
+      if (existsSync(distFinal)) renameSync(distFinal, distOld);
       renameSync(dist, distFinal);
+      rmSync(distOld, { force: true, recursive: true });
 
       break;
     }
