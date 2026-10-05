@@ -3,7 +3,7 @@ import { route, SEO } from '../document-helpers.tsx';
 export default function Documentation() {
 	return (
 		<>
-			<h1>InvisiProxy LTS (v6.x.x)</h1>
+			<h1>InvisiProxy LTS</h1>
 			<SEO>
 				<p>
 					<img
@@ -163,44 +163,74 @@ pnpm dev`}</code>
 				routing ports, specify a blacklist, and more.
 				{'\n'}
 			</p>
-			<ul>
-				<li>
-					<code>{'getSWRoute'}</code>
-					{': '}Selects the Scramjet service worker based on adblocking.
-					Adblocking is enabled by default.
-				</li>
-				<li>
-					<code>{'proxyUrl'}</code>
-					{':'} Specifies a SOCKS5 protocol URL defaulting to the
-					default Tor proxy port. This can be swapped out with any
-					valid port or SOCK5s proxy.
-					{'\n  '}
-				</li>
-				<li>
-					<code>{'transportUrl'}</code>
-					{':'} The Libcurl module implementing Proxy Transports for
-					use with Wisp. All browsers use this transport.
-					{'\n  '}
-				</li>
-				<li>
-					<code>{'wispUrl'}</code>
-					{':'} Modify the pathname or url handling for Wisp
-				</li>
-				<li>
-					<code>{'getTransportOptions'}</code>
-					{':'} Configures Wisp and the optional SOCKS5 proxy for
-					Libcurl.
-					{'\n  '}
-				</li>
-				<li>
-					<code>{'Controller'}</code>
-					{':'} This constructor allows you to swap out the prefix
-					used for Scramjet dynamically and specify file locations. It
-					accepts an initialized Proxy Transports transport directly.
-					The worker entry points are <code>{'views/sw.js'}</code> and{' '}
-					<code>{'views/sw-blacklist.js'}</code>.{'\n  '}
-				</li>
-			</ul>
+			<table class="documentation-table">
+				<thead>
+					<tr>
+						<th scope="col">{'Option'}</th>
+						<th scope="col">{'Description'}</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>
+							<code>{'getSWRoute'}</code>
+						</td>
+						<td>
+							{
+								'Selects the Scramjet service worker based on adblocking.'
+							}
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<code>{'proxyUrl'}</code>
+						</td>
+						<td>
+							{
+								'Specifies a SOCKS5 protocol URL defaulting to the default Tor proxy port.'
+							}
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<code>{'transportUrl'}</code>
+						</td>
+						<td>
+							{
+								'The Libcurl module implementing Proxy Transports for use with Wisp.'
+							}
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<code>{'wispUrl'}</code>
+						</td>
+						<td>
+							{'Modify the pathname or url handling for Wisp.'}
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<code>{'getTransportOptions'}</code>
+						</td>
+						<td>
+							{
+								'Configures Wisp and the optional SOCKS5 proxy for Libcurl.'
+							}
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<code>{'Controller'}</code>
+						</td>
+						<td>
+							{
+								'This constructor allows you to swap out the prefix used for Scramjet dynamically and specify file locations.'
+							}
+						</td>
+					</tr>
+				</tbody>
+			</table>
 		</>
 	);
 }

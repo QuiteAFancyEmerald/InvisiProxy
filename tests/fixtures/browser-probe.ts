@@ -35,7 +35,20 @@ try {
 	);
 	await context.addInitScript(() => {
 		Object.assign(window, {
-			AOS: { init() {}, refresh() {} },
+			AOS: {
+				init() {
+					document.documentElement.setAttribute(
+						'data-aos-initialized',
+						'true'
+					);
+					document
+						.querySelectorAll('[data-aos]')
+						.forEach((element) => {
+							element.classList.add('aos-init', 'aos-animate');
+						});
+				},
+				refresh() {},
+			},
 			tippy: () => [],
 			loadFull: async () => {},
 			tsParticles: { load: async () => ({ destroy() {} }) },
@@ -51,6 +64,46 @@ try {
 			(url) => url.pathname === `${serverUrl.pathname}index`
 		);
 	}
+	await page.route('**/aos.css', (request) =>
+		request.fulfill({
+			contentType: 'text/css',
+			body: '[data-aos^="fade"] { opacity: 0; transform: translateX(-100px); } [data-aos].aos-animate { opacity: 1; transform: none; }',
+		})
+	);
+	await page.goto(route('index.html'));
+	await page.waitForFunction(
+		() =>
+			document.documentElement.getAttribute('data-aos-initialized') ===
+			'true'
+	);
+	assert.equal(
+		await page.locator('#banner').count(),
+		config.showSplash ? 1 : 0
+	);
+	const animatedSections = page.locator('[data-aos]');
+	assert.ok((await animatedSections.count()) > 5);
+	assert.ok(
+		await animatedSections.evaluateAll((elements) =>
+			elements.every(
+				(element) => getComputedStyle(element).opacity === '1'
+			)
+		)
+	);
+	await page.evaluate(() => {
+		delete (window as unknown as { AOS?: unknown }).AOS;
+		document
+			.querySelectorAll('[data-aos]')
+			.forEach((element) =>
+				element.classList.remove('aos-init', 'aos-animate')
+			);
+	});
+	assert.ok(
+		await animatedSections.evaluateAll((elements) =>
+			elements.every(
+				(element) => getComputedStyle(element).opacity === '1'
+			)
+		)
+	);
 	await page.goto(route('pages/nav/partners.html'));
 	const button = page.locator('#dispense-link');
 	await button.waitFor({ state: 'visible' });

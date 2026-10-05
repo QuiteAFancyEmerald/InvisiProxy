@@ -253,9 +253,48 @@ img {
 }
 
 code {
-	font-family: "Source Code Pro", monospace;
+	font-family: "Source Code Pro", ui-monospace, SFMono-Regular, Consolas, monospace;
+	font-size: 0.9em;
+	font-weight: 400;
 	background-color: var(--nord0m1);
-	color: var(--bigtitle-color, rgb(255, 88, 97));
+	color: var(--nord4);
+	border: 1px solid color-mix(in srgb, var(--nord4) 16%, transparent);
+	border-radius: 6px;
+	padding: 0.15em 0.4em;
+	overflow-wrap: anywhere;
+}
+
+pre {
+	box-sizing: border-box;
+	max-width: 100%;
+	min-width: 0;
+	margin: 20px 0;
+	padding: 20px 24px;
+	background-color: var(--nord0);
+	color: var(--nord4);
+	border: 1px solid color-mix(in srgb, var(--nord4) 20%, transparent);
+	border-radius: 12px;
+	font-family: "Source Code Pro", ui-monospace, SFMono-Regular, Consolas, monospace;
+	font-size: 0.875rem;
+	font-weight: 400;
+	line-height: 1.7;
+	text-align: left;
+	white-space: pre;
+	tab-size: 2;
+	overflow-x: auto;
+}
+
+pre code {
+	display: block;
+	padding: 0;
+	background: none;
+	border: 0;
+	border-radius: 0;
+	font-size: inherit;
+	line-height: inherit;
+	color: inherit;
+	white-space: inherit;
+	overflow-wrap: normal;
 }
 
 strong {
@@ -322,6 +361,12 @@ input[type="radio"] {
 
 .text-center {
 	text-align: center;
+}
+
+/* Keep content visible when the optional scroll animation script is unavailable. */
+[data-aos]:not(.aos-init) {
+	opacity: 1 !important;
+	transform: none !important;
 }
 
 a {
@@ -2094,8 +2139,47 @@ select::after {
 	font-family: "Lato", sans-serif;
 }
 
-#documentation code {
-	color: var(--nord13);
+#documentation > .box-hero,
+#documentation .box-noflex {
+	min-width: 0;
+	width: 100%;
+}
+
+.documentation-table {
+	width: 100%;
+	margin: 24px 0;
+	border: 1px solid color-mix(in srgb, var(--nord4) 20%, transparent);
+	border-spacing: 0;
+	border-radius: 12px;
+	overflow: hidden;
+	background-color: var(--nord0);
+	text-align: left;
+	text-wrap: pretty;
+	line-height: 1.6;
+}
+
+.documentation-table th,
+.documentation-table td {
+	padding: 16px clamp(12px, 2vw, 24px);
+	text-align: left;
+	vertical-align: top;
+}
+
+.documentation-table th {
+	background-color: var(--nord0m1);
+	font-weight: 700;
+}
+
+.documentation-table th:first-child {
+	width: 30%;
+}
+
+.documentation-table tbody td {
+	border-top: 1px solid color-mix(in srgb, var(--nord4) 12%, transparent);
+}
+
+.documentation-table tbody tr:nth-child(even) {
+	background-color: color-mix(in srgb, var(--nord4) 4%, var(--nord0));
 }
 
 .faq-center {

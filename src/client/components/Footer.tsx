@@ -82,17 +82,6 @@ export default function Footer() {
 					<h3>Transports</h3>
 					<ul>
 						<li>
-							<a href="https://fontawesome.com/">
-								Font Awesome
-								{'\n        '}
-							</a>
-						</li>
-					</ul>
-				</div>
-				<div class={'footerlist'}>
-					<h3>Transports</h3>
-					<ul>
-						<li>
 							<a
 								target={'_blank'}
 								rel={'noopener noreferrer'}

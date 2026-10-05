@@ -602,12 +602,14 @@ const preparePage = async () => {
       });
     });
 
-  const banner = document.getElementById('banner');
-  if (banner) {
+  if (document.querySelector('[data-aos]')) {
     useModule(() => {
       AOS.init();
     });
+  }
 
+  const banner = document.getElementById('banner');
+  if (banner) {
     fetch(route("/assets/json/splash.json"), {
       mode: 'same-origin',
     }).then((response) => {
