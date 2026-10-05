@@ -1,4 +1,4 @@
-# Contributing to InvisiProxy LTS
+# Contributing to InvisiProxy LTS Legacy
 
 Thank you for considering contributing to InvisiProxy LTS! Your contributions help us improve and provide better functionality. Please follow the guidelines below to ensure a smooth process.
 

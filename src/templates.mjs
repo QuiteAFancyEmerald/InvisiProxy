@@ -17,6 +17,7 @@ const __dirname = '../views/pages/misc/deobf',
     'tos',
     'settings',
     'proxnav-settings',
+    'credit-contents',
   ],
   readTemplate = (identifier) =>
     readFileSync(

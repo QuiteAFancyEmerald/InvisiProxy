@@ -186,6 +186,7 @@ commands: for (let i = 2; i < process.argv.length; i++)
               // Print the file being compiled
               if (config.verbose) {
                 console.log(`[Build] Compiling file "${file}" from ${base + dir + '/'} to ${targetPath}`);
+                console.log(`This project has moved to https://github.com/InvisiProxy/InvisiProxyLTS. This version of InvisiProxy is no longer maintained. Please update your instance.`);
               }
             } else {
               copyFileSync(base + dir + '/' + file, targetPath);

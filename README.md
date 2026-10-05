@@ -2,7 +2,12 @@
 
 <img align="left" width="40px" src="https://raw.githubusercontent.com/QuiteAFancyEmerald/InvisiProxy/master/views/assets/img/logo_github.png"></img>
 
-# InvisiProxy LTS (v7.x.x)
+# InvisiProxy LTS (Legacy v7.x.x)
+## This repository and project has moved
+## Please use https://github.com/InvisiProxy/InvisiProxyLTS instead !!!
+## Please use https://github.com/InvisiProxy/InvisiProxyLTS instead !!!
+## Please use https://github.com/InvisiProxy/InvisiProxyLTS instead !!!
+#### This is the last version of InvisiProxy to support Ultraviolet. Ultraviolet is now fully replaced by Scramjet as it has better site support and security measures.
 #### Formerly Holy Unblocker LTS
 
 ![GitHub Actions Status](https://github.com/QuiteAFancyEmerald/InvisiProxy/workflows/CI-Production/badge.svg)
@@ -15,10 +20,9 @@
 
 ## You can support InvisiProxy by starring the repository!
 
-This project serves mostly as a proof of concept for the ideal clientless solution to bypassing censorship. A good use case of this project would be if you ever needed a clientless solution to use Tor or leave minimal traces of device activity. Simply host this project on any domain and have an alternative solution to a VPN without needing to download anything on said device. Being a secure web proxy service, it supports numerous sites while being updated frequently and concentrating on being easy to self-host. InvisiProxy LTS works with a large number of sites, including YouTube, ChatGPT, Discord, GeForce NOW and more!
-Also has a good amount of exclusive features compared to other web proxies in terms of bypassing web filters and global censorship from countries.
+This project serves mostly as a proof of concept for the ideal clientless solution to bypassing censorship. A good use case of this project would be if you ever needed a method to use Tor, swap regions when browsing (or use an external proxy), browse websites without making accounts (reduces fingerprinting), bypass adblocking, and/or leave minimal traces of device activity. Simply host this project on any domain and have an alternative solution to a VPN without needing to download anything on said device. Being a secure web proxy service, it supports numerous sites while being updated frequently and concentrating on being easy to self-host. InvisiProxy LTS works with a large number of sites, including YouTube, Gemini, ChatGPT, Discord, GeForce NOW and more! This project also features good amount of exclusive features compared to other web proxies in terms of bypassing web filters (DOM Masquerading and Source Randomization) and global censorship from countries. Current countries supported are China (GFW) and Russia.
 
-#### Over 30M+ users since 2020. Thank you so much for the support I could have never imagined how massive the web proxy community has become.
+#### Over 35M+ users since 2020. Thank you so much for the support I could have never imagined how massive the web proxy community has become.
 
 #### Current Branch: Production
 
@@ -31,9 +35,12 @@ Also has a good amount of exclusive features compared to other web proxies in te
 
 #### Considering switching branches for self-hosting to a production branch!
 
-View the <a href="#deploy-InvisiProxy">self-deployment options</a> if you wish to self host this project. Can't deploy using any of the free options? Check out Railway or look into cheap, paid VPS hosting solutions. If you don't wish to self-host join the discord for more official instance links that are restocked frequently.
+View the <a href="#deploy-InvisiProxy">self-deployment options</a> if you wish to self host this project. Can't deploy using any of the free options? Check out Koyeb or look into cheap, paid VPS hosting solutions. If you don't wish to self-host join the discord for more official instance links that are restocked frequently.
 
 **Be sure to join TitaniumNetwork's Discord for more official site links:** <a href="https://discord.gg/unblock">https://discord.gg/unblock</a>
+
+## This repository and project has moved
+## Please use https://github.com/InvisiProxy/InvisiProxyLTS instead !!!
 
 <br>
 
@@ -89,7 +96,7 @@ Replit is no longer free and Heroku has a set policy against web proxies. Try Gi
 
 - Fork (and star!) this repository to your GitHub account
 - Head to the official <a href="https://github.com/codespaces">Codespaces</a> website (ensure you have a GitHub account already made)
-- Select **New Codespaces** and look for _[USERNAME]/InvisiProxy_ on your account
+- Select **New Codespaces** and look for `[USERNAME]/InvisiProxy` on your account
 - Ensure the branch is set to `master` and the dev container configuration is set to **InvisiProxy LTS**
 - Select **Create Codespace** and allow the container to setup
 - Type `pnpm run fresh-install` and `pnpm start` in the terminal

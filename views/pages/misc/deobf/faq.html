@@ -5,7 +5,16 @@
   <input
     class="faq-search"
     type="text"
-    onkeyup="var a=document.querySelectorAll('#faqs>div');for(var i=0;i<a.length;i++)a[i].style.display=a[i].firstElementChild.textContent.toUpperCase().indexOf(this.value.toUpperCase())!=-1?'block':'none'"
+    onkeyup="
+      var a = document.querySelectorAll('#faqs>div');
+      for (var i = 0; i < a.length; i++)
+        a[i].style.display =
+          a[i].firstElementChild.textContent
+            .toUpperCase()
+            .indexOf(this.value.toUpperCase()) != -1
+            ? 'block'
+            : 'none';
+    "
     autocomplete="off"
     spellcheck="false"
     placeholder="Search"
@@ -23,9 +32,8 @@
     <a id="iconfinder" class="fancybutton fb-l glowbutton">Find Icon URL</a>
   </div>
   <script>
-    document.getElementById(
-      'iconfinder'
-    ).href = `javascript:alert((Array.from(document.head.querySelectorAll("link[rel*='icon']")).slice(-1)[0]||0).href||location.origin+"{{route}}{{/favicon.ico}}")`;
+    document.getElementById('iconfinder').href =
+      `javascript:alert((Array.from(document.head.querySelectorAll("link[rel*='icon']")).slice(-1)[0]||0).href||location.origin+"{{route}}{{/favicon.ico}}")`;
   </script>
   <p>
     {{mask}}{{ Copy the URL that the bookmarklet gives you. Then go back to HU
@@ -36,13 +44,15 @@
   <div class="faq-text">
     <h3>
       <strong
-        >{{mask}}{{I am getting "Network Error" or Site Error every time I use
-        the proxy?}}</strong
+        >{{mask}}{{I am getting "Network Error", Network Connection Lost or Site
+        Error every time I use the proxy?}}</strong
       >
     </h3>
     <p>
-      {{mask}}{{This is a known issue with our modern web proxies. Simply hit
-      the Refresh Page button and reload the page to resolve the issue.}}
+      {{mask}}{{This is a known issue with our modern web proxies. Due to the
+      amount of users we get typically after ten minutes of no tab activity the
+      connection is cut. Simply hit the Refresh Page button and reload the page
+      to resolve the issue.}}
     </p>
     <p>
       {{mask}}{{ This typically happens the first time you use the proxy. We
@@ -52,17 +62,21 @@
   <div class="faq-text">
     <h3>
       <strong
-        >{{mask}}{{I am having problems logging into sites or viewing content since it thinks I am a bot.}}</strong>
+        >{{mask}}{{I am having problems logging into sites or viewing content
+        since it thinks I am a bot.}}</strong
+      >
     </h3>
     <p>
-      {{mask}}{{During peak traffic hours this is very common due to everything going through only two respective IPs. The solution is to swap regions via Region Selection or enable Tor routing.}}
+      {{mask}}{{During peak traffic hours this is very common due to everything
+      going through only two respective IPs. The solution is to swap regions via
+      Region Selection or enable Tor routing.}}
     </p>
   </div>
   <div class="faq-text">
     <h3>
       <strong
-        >{{mask}}{{I am getting an error similar to: "'cdn.example.com' cannot be
-        reached."}}</strong
+        >{{mask}}{{I am getting an error similar to: "'cdn.example.com' cannot
+        be reached."}}</strong
       >
     </h3>
     <p>
@@ -73,7 +87,9 @@
   </div>
   <div class="faq-text">
     <h3>
-      <strong>{{mask}}{{Why is my site loading in partially or just blank?}}</strong>
+      <strong
+        >{{mask}}{{Why is my site loading in partially or just blank?}}</strong
+      >
     </h3>
     <p>
       {{mask}}{{ Not all websites are supported. Naturally this is due to the
@@ -137,8 +153,8 @@
   <div class="faq-text">
     <h3>
       <strong
-        >{{mask}}{{Why is the site I am on not working correctly or having CAPTCHA
-        errors?}}</strong
+        >{{mask}}{{Why is the site I am on not working correctly or having
+        CAPTCHA errors?}}</strong
       >
     </h3>
     <p>
@@ -159,8 +175,8 @@
     <ul>
       <li>
         <p>
-          {{mask}}{{Reloading the page normally when the error above happens should load
-          the video.}}
+          {{mask}}{{Reloading the page normally when the error above happens
+          should load the video.}}
         </p>
       </li>
       <li>

@@ -88,7 +88,7 @@
     "Scramjet": ["Sc*r*a*m*j*e*t"]
   },
   "splash": [
-    "{{mask}}{{This version is the public build of the Invisi LTS project, and it's being worked on via the master branch; stuff may NOT work! REMOVE THIS MESSAGE if you wish to host a mirror.}}"
+    "{{mask}}{{This project has moved to https://github.com/InvisiProxy/InvisiProxyLTS. This version of InvisiProxy is no longer maintained. Please update your instance.}}"
   ],
-  "version": ["7.0.2"]
+  "version": ["7.1.0-legacy"]
 }

@@ -375,9 +375,9 @@ const preparePage = async () => {
 
     tru: sjPreset('https://truffled.lol/g'),
 
-    youtube: urlHandler(uvUrl('https://youtube.com')),
+    youtube: sjPreset('https://youtube.com'),
 
-    invidious: sjPreset('https://invidious.snopyta.org'),
+    invidious: sjPreset('https://docs.invidious.io/instances'),
 
     chatgpt: sjPreset('https://chat.openai.com/chat'),
 
@@ -391,7 +391,7 @@ const preparePage = async () => {
 
     tiktok: sjPreset('https://www.tiktok.com'),
 
-    animetsu: sjPreset('https://animetsu.net'),
+    gemini: sjPreset('https://gemini.google.com/app'),
 
     twitter: sjPreset('https://twitter.com'),
 
@@ -574,7 +574,7 @@ const preparePage = async () => {
   prSet('pr-gf', 'geforcenow');
   prSet('pr-sp', 'spotify');
   prSet('pr-tt', 'tiktok');
-  prSet('pr-ha', 'animetsu');
+  prSet('pr-ha', 'gemini');
   prSet('pr-tw', 'twitter');
   prSet('pr-tc', 'twitch');
   prSet('pr-ig', 'instagram');

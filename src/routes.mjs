@@ -75,7 +75,7 @@ let pages = {
 
 let externalPages = {
   github: {
-    default: 'https://github.com/QuiteAFancyEmerald/InvisiProxy',
+    default: 'https://github.com/QuiteAFancyEmerald/InvisiProxy-Legacy',
     aos: 'https://github.com/michalsnik/aos',
     'bare-module': 'https://github.com/motortruck1221/bare-as-module3',
     'bare-mux': 'https://github.com/MercuryWorkshop/bare-mux',
@@ -90,14 +90,12 @@ let externalPages = {
   },
   codespaces: 'https://github.com/codespaces',
   'tor-project': 'https://tb-manual.torproject.org/installation',
-  'titaniumnetwork-documentation': 'https://docs.titaniumnetwork.org',
-  'status': 'https://status.titaniumnetwork.org',
   'patreon': 'https://www.patreon.com/invisiproxy',
   'kofi': 'https://ko-fi.com/quiteafancyemerald',
-  'titaniumnetwork-discord': 'https://discord.gg/CwWpdGkuWY',
   'truffled': 'https://truffled.lol',
   'freedomproject': 'https://nullatenus.com',
   'wispurr': 'https://github.com/sylvieisnton/wispurr',
+  'invisiproxy': 'https://invisiproxy.com/mirrors',
 };
 
 // Override the route names below when usingSEO is disabled in config.json.
@@ -119,13 +117,12 @@ let altPaths = {
     ultraviolet: 'nt',
     wisp: 'router',
   },
-  'titaniumnetwork-documentation': 'docs',
   codespaces: 'codesp',
   'tor-project': 'tr',
-  'titaniumnetwork-discord': 'social',
   'truffled': 'educational',
   'freedomproject': 'frpu',
   'wispurr': 'wsp',
+  'invisiproxy': 'ivps',
   /* Raw File Names */
   files: {
     'sw.js': 'service.js',
