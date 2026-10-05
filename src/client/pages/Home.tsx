@@ -54,6 +54,77 @@ export default function Home() {
 							Browse Now
 						</a>
 					</div>
+					<Cooking />
+					<section
+						class={'mac-window'}
+						aria-label={'Command Line Instructions'}
+					>
+						<div class={'mac-title-bar'}>
+							<div class={'mac-buttons'}>
+								<span class={'mac-close'}></span>
+								<span class={'mac-minimize'}></span>
+								<span class={'mac-maximize'}></span>
+							</div>
+						</div>
+						<div class={'mac-content'}>
+							<p>
+								<span class={'cmd'}>
+									{'git clone --recurse-submodules'}
+									<span class={'url'}>
+										{'\n                  '}
+										https://github.com/QuiteAFancyEmerald/InvisiProxy.git
+									</span>
+								</span>
+								<br />
+								<span class={'cmd'}>
+									{'cd '}
+									InvisiProxy
+									{'\r'}
+								</span>
+								<br />
+								<span class={'comment'}>
+									{
+										'For first-time setup on a production branch...'
+									}
+								</span>
+								<br />
+								<span class={'cmd'}>
+									{'pnpm run fresh-start\r'}
+								</span>
+								<br />
+								<span class={'comment'}>
+									{'Or typical uses...'}
+								</span>
+								<br />
+								<span class={'cmd'}>{'pnpm start\r'}</span>
+								<br />
+								<span class={'comment'}>
+									{'For development...'}
+								</span>
+								<br />
+								<span class={'cmd'}>{'pnpm dev\r'}</span>
+								<br />
+								<br />
+								<span class={'comment'}>
+									InvisiProxy LTS
+									{` v${values.version} // master`}
+								</span>
+								<br />
+								<span class={'comment'}>{'Node.js v26.x'}</span>
+								<br />
+								<span class={'comment'}>
+									{'Fastify v5.8.5'}
+								</span>
+								<br />
+								<br />
+								<span class={'downarrowgroup'}>
+									<i class={'fas fa-level-down-alt'}></i>
+									<i class={'fas fa-level-down-alt'}></i>
+									<i class={'fas fa-level-down-alt'}></i>
+								</span>
+							</p>
+						</div>
+					</section>
 				</section>
 				<Cooking />
 				<div id={'scrollfix'}>{'­'}</div>
